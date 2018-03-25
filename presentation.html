@@ -1,0 +1,286 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Orbitron" rel="stylesheet">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!-- start nav for the mobile  -->
+  <nav class="nopc">
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Presentation</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="propos.html">A propos</a>
+    </div>
+
+    <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  </nav>
+
+  <!-- end nav for the mobile  -->
+
+<div class="presentation" style="display:flex;flex-wrap:wrap;">
+
+
+
+  <!--Rotating card-->
+  <div class="card-wrapper carterotation">
+      <div  class="card-rotating effect__click text-center h-100 w-100">
+
+          <!--Front Side-->
+          <div class="face front" id="Id">
+
+              <!-- Image-->
+              <div class="card-up" style="height:170px;">
+                  <img style="height:100%;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" class="img-fluid" alt="Image with a photo of clouds.">
+              </div>
+              <!--Avatar-->
+              <div class="avatar mx-auto white" style="height:100px;"><img style="height:100%;margin-top:-2em; width:115px;" src="img/portrait.jpg" class="rounded-circle" alt="Sample avatar image.">
+              </div>
+              <!--Content-->
+              <div class="card-body">
+                  <h4>James Davies</h4>
+                  <p>Web developer</p>
+                  <p><i class="material-icons" style="color:#CC0000;">thumb_up</i>  Symfony</p>
+                  <p><i class="material-icons" style="color:#CC0000;">star_border</i>  Football</p>
+                  <!--Triggering button-->
+                  <a class="rotate-btn"  onclick="derriere()"><i class="material-icons" style="color:#007E33;">screen_rotation</i> rotate</a>
+              </div>
+          </div>
+          <!--/.Front Side-->
+
+          <!--Back Side-->
+          <div class="face back" id="Id1" style="display:none;">
+
+              <div class="card-body">
+
+                  <!--Content-->
+                  <h4>About me</h4>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?
+                  </p>
+                  <hr>
+                  <!--Social Icons-->
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a class="icons-sm fb-ic">
+                      <img src="img/ico3.png" style="height:25px;" alt="logo">
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm tw-ic">
+                          <img src="img/ico2.png" style="height:25px;" alt="logo">
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm gplus-ic">
+                        <img src="img/ico1.png" style="height:25px;" alt="logo">
+
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm li-ic">
+                        <img src="img/ico4.png" style="height:25px;" alt="logo">
+
+                      </a></li>
+                  </ul>
+                  <!--Triggering button-->
+                  <a class="rotate-btn" onclick="devant()" data-card="card-1"><i class="material-icons" style="color:#007E33;">screen_rotation</i> rotate back</a>
+
+
+              </div>
+
+          </div>
+          <!--/.Back Side-->
+
+      </div>
+  </div>
+  <!--/.Rotating card-->
+
+
+
+
+  <!--Rotating card-->
+  <div class="card-wrapper carterotation">
+      <div  class="card-rotating effect__click text-center h-100 w-100">
+
+          <!--Front Side-->
+          <div class="face front" id="Id2">
+
+              <!-- Image-->
+              <div class="card-up" style="height:170px;">
+                  <img style="height:100%;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" class="img-fluid" alt="Image with a photo of clouds.">
+              </div>
+              <!--Avatar-->
+              <div class="avatar mx-auto white" style="height:100px;"><img style="height:100%;margin-top:-2em;" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%289%29.jpg" class="rounded-circle" alt="Sample avatar image.">
+              </div>
+              <!--Content-->
+              <div class="card-body">
+                  <h4>Jonathan Doe</h4>
+                  <p>Web developer</p>
+                  <p><i class="material-icons" style="color:#CC0000;">thumb_up</i>  JavaScript</p>
+                  <p><i class="material-icons" style="color:#CC0000;">star_border</i>  Cinema</p>
+                  <!--Triggering button-->
+                  <a class="rotate-btn"  onclick="derriere1()"><i class="material-icons" style="color:#007E33;">screen_rotation</i> rotate</a>
+              </div>
+          </div>
+          <!--/.Front Side-->
+
+          <!--Back Side-->
+          <div class="face back" id="Id3" style="display:none;">
+
+              <div class="card-body">
+
+                  <!--Content-->
+                  <h4>About me</h4>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?
+                  </p>
+                  <hr>
+                  <!--Social Icons-->
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a class="icons-sm fb-ic">
+                      <img src="img/ico3.png" style="height:25px;" alt="logo">
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm tw-ic">
+                          <img src="img/ico2.png" style="height:25px;" alt="logo">
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm gplus-ic">
+                        <img src="img/ico1.png" style="height:25px;" alt="logo">
+
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm li-ic">
+                        <img src="img/ico4.png" style="height:25px;" alt="logo">
+
+                      </a></li>
+                  </ul>
+                  <!--Triggering button-->
+                  <a class="rotate-btn" onclick="devant1()" data-card="card-1"><i class="material-icons" style="color:#007E33;">screen_rotation</i> rotate back</a>
+
+
+              </div>
+
+          </div>
+          <!--/.Back Side-->
+
+      </div>
+  </div>
+  <!--/.Rotating card-->
+
+
+
+
+
+
+  <!--Rotating card-->
+  <div class="card-wrapper carterotation">
+      <div  class="card-rotating effect__click text-center h-100 w-100">
+
+          <!--Front Side-->
+          <div class="face front" id="Id4">
+
+              <!-- Image-->
+              <div class="card-up" style="height:170px;">
+                  <img style="height:100%;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" class="img-fluid" alt="Image with a photo of clouds.">
+              </div>
+              <!--Avatar-->
+              <div class="avatar mx-auto white" style="height:100px;"><img style="height:100%;margin-top:-2em; width:115px;" src="img/portrait1.jpg" class="rounded-circle" alt="Sample avatar image.">
+              </div>
+              <!--Content-->
+              <div class="card-body">
+                  <h4>Roger Mountain</h4>
+                  <p>Web developer</p>
+                  <p><i class="material-icons" style="color:#CC0000;">thumb_up</i>  Java</p>
+                  <p><i class="material-icons" style="color:#CC0000;">star_border</i>  Game</p>
+                  <!--Triggering button-->
+                  <a class="rotate-btn"  onclick="derriere2()"><i class="material-icons" style="color:#007E33;">screen_rotation</i>  rotate</a>
+              </div>
+          </div>
+          <!--/.Front Side-->
+
+          <!--Back Side-->
+          <div class="face back" id="Id5" style="display:none;">
+
+              <div class="card-body">
+
+                  <!--Content-->
+                  <h4>About me</h4>
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?
+                  </p>
+                  <hr>
+                  <!--Social Icons-->
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a class="icons-sm fb-ic">
+                      <img src="img/ico3.png" style="height:25px;" alt="logo">
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm tw-ic">
+                          <img src="img/ico2.png" style="height:25px;" alt="logo">
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm gplus-ic">
+                        <img src="img/ico1.png" style="height:25px;" alt="logo">
+
+                      </a></li>
+                      <li class="list-inline-item"><a class="icons-sm li-ic">
+                        <img src="img/ico4.png" style="height:25px;" alt="logo">
+
+                      </a></li>
+                  </ul>
+                  <!--Triggering button-->
+                  <a class="rotate-btn" onclick="devant2()" data-card="card-1"><i class="material-icons" style="color:#007E33;">screen_rotation</i> rotate back</a>
+
+
+              </div>
+
+          </div>
+          <!--/.Back Side-->
+
+      </div>
+  </div>
+  <!--/.Rotating card-->
+
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
