@@ -146,6 +146,12 @@ p a
   margin-top:2em;
 }
 
+.videopc
+{
+  display: none;
+}
+
+
 @media (min-width: 510px)
 {
 
@@ -153,6 +159,17 @@ p a
   {
     width:45%;
     margin-left: 2%;
+  }
+
+  .videopc
+  {
+    display: block;
+    height: 80vh;
+  }
+
+  .fondmb
+  {
+    display: none;
   }
 
 }
